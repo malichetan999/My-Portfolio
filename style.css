@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Oswald&family=Source+Serif+Pro:ital,wght@0,400;1,700&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: coral;
+    border-radius: 12px;
+    transition: all 0.3s ease; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: coral;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding:20px 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+nav.sticky{
+    background: coral;
+    padding: 13px 0;
+}
+nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+ }
+ nav .navbar .logo a{
+     font-weight: 500;
+     font-size: 35px;
+     color: coral;
+}
+nav.sticky .navbar .logo a{
+color: white;
+}
+nav .navbar .menu{
+    display: flex;
+    position: relative;
+}
+nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+}
+
+nav .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+
+}
+.navbar .menu a:hover{
+    color: coral;
+}
+nav.sticky .menu a{
+    color: white;
+}
+nav.sticky .menu align-self:hover{
+    color: black;
+}
+
+.navbar .media-icons a{
+    color: coral;
+    font-size: 18px;
+    margin: 0 6px;
+}
+nav.sticky .media-icons a{
+    color: white;
+}
+/*side nav menu button css*/
+nav .menu-btn, 
+.navbar .menu .cancel-btn{
+    position: absolute;
+    color: white;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transform: all 0.3s ease;
+    display: none;
+} 
+nav .menu-btn{
+    color: red;
+}
+nav.sticky .menu-btn{
+    color: red;
+}
+.navbar .menu .menu-btn{
+    color: red;
+}
+
+/*heading*/
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url(Images/chetan.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .text-one{
+    font-size: 25px;
+    color: black;
+}
+.home .text-two{
+    color: black;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .text-three{
+    font-size: 40px;
+    margin: 5px 0;
+    color:coral;
+}
+/*section*/
+section{
+    padding-top: 40px;
+}
+section .content{
+    width: 80%;
+    margin: 40px auto;
+ 
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+    content:'';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: coral;
+    left: 0;
+    bottom: 0;
+}
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-details .left{
+    width: 45px;
+}
+.about .left img
+{
+  height: 450px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 60px;
+}
+.about .about-details .right{
+    width: 55%;
+}
+.about .about-details .right .topic{
+    color: firebrick;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+}
+.about .about-details .right p{
+    font-size: 19px;
+    font-weight: 400;
+}
+section.topic{
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about-details .right p{
+    text-align: justify;
+    color: black;
+}
+section .button{
+    padding: 26px;
+}
+section .button a{
+    outline: none;
+    padding: 5px 11px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    background: coral;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+section .button button:hover{
+    border-color: coral;
+    background-color: white;
+    color: coral;
+}
+
+/*SKILLS */
+.skills{
+    background: silver;
+}
+.skills .content{
+    padding: 20px 0;
+    
+}
+.skills .skills-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-details .image-skill img{
+    width: 500px;
+    height: 350px;
+    object-fit: fill;
+    border-radius: 30px;
+    
+}
+.skills-details .text{
+    width: 50%;
+    font-size: 21px;
+    font-weight: 600;
+}
+.skills-details .text .topic{
+    color: white;
+    font-size: 39px;
+}
+.skills-details p{
+ color: black;
+ text-align: justify;
+}
+.skills-details .boxes{
+    width: 45px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-details .box{
+    width:calc(100% / 2 -20px);
+    margin: 20px 0;
+}
+.skills-details .boxes .topic{
+    font-size: 25px;
+    font-weight: 400;
+    color: chocolate;
+}
+.skills-details .boxes .per{
+    font-size: 60px;
+    color: coral;
+}
+ /*services*/
+
+ .services .boxes{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ .services .boxes .box{
+     margin: 20px 0;
+     width: calc(100% / 3 - 20px);
+     
+     text-align: center;
+     border-radius: 12px;
+     padding: 30px 10px;
+     box-shadow: 0 5px 19px rgba(0,0,0,0.12);
+     cursor: default;
+     transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+    background: coral;
+    color: white;
+}
+.services .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    background: coral;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 19px;
+    color: white;
+    margin:0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+    background: white;
+    color: coral;
+}
+.services .box .topic{
+    font-size: 22px;
+    font-weight: 450;
+}
+.services .boxes .box p{
+    font-size: 21px;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+    color: white;
+    transition: all 0.4s ease;
+}
+.contact{
+    background: wheat;
+}
+.contact .content{
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.contact .information .head{
+    width: 14%;
+    padding: 2px;
+    text-align: center;
+    font-size: 20px;
+    color: darkred;
+    font-weight: 700;
+    border-bottom: 5px solid coral;
+    border-radius: 25px;
+}
+.contact .information .m-no , .gmail{
+    font-size: 19px;
+    padding: 5px;
+}
+.contact .information i{
+    color: rgb(189, 158, 56);
+}
+
+  /*Footer*/
+  footer{
+      background: coral;
+      padding: 15px 0;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  footer .text span{
+      font-size: 17px;
+      font-weight: 400;
+      color: white;
+  }
+
+  footer .text span a{
+      font-weight: 500;
+      color: white;
+  }
+  footer .text span a:hover{
+      text-decoration: underline;
+  }
+
+  /*scroll-up*/
+
+  .scroll-button a{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      color: white;
+      background: tomato;
+      padding: 10px 12px;
+      font-size: 18px;
+      border-radius: 6px;
+      box-shadow: rgba(0,0,0,0.15);
+      display: none;
+  }
+
+  /* responsive*/
+
+  @media (max-width:1190px){
+      section.content{
+          width: 85%;
+      }
+  }
+
+  @media (max-width:1000px){
+    .about .about-details{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about .about-details .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-details .right{
+        width: 90%;
+        margin: 40px 0;
+    }
+    .services .boxes .box{
+        margin: 20px 0;
+        width: calc(100% / 1 - 20px);
+
+    }
+}
+    @media (max-width:900px){
+        .about .left img{
+            height: 350px;
+            width: 350px;
+        }
+
+    }
+    @media (max-width:750px){
+      nav .navbar{
+          width: 90%;
+      }
+      nav .navbar .menu{
+          position: fixed;
+          left: -100%;
+          top: 0;
+          background: coral;
+          height: 100vh;
+          max-width: 400px;
+          width: 100%;
+          padding-top: 60px;
+          flex-direction: column;
+          align-items: center;
+          transition: all 0.5s ease;
+      }
+      .navbar.active .menu{
+          left: 0;
+      }
+      .about .right .button a{
+          width: 100%;
+          margin:  0 -10px;
+          }        
+      nav .navbar .menu a{
+          font-size: 23px;
+          display: block;
+          color: white;
+          margin: 10px 0;
+
+      }
+      nav.sticky .menu a:hover{
+          color: coral;
+      }
+      nav .navbar .media-icons{
+          display: none;
+      }
+      nav .menu-btn,
+      .navbar .menu .cancel-btn{
+          display:block;
+      }
+    .home .text-two{
+        font-size: 65px;
+    }
+    .home .text-three{
+        font-size: 35px;
+    }
+
+    .skills .skills-details{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skills-details .text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .skills-details .boxes{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .services .boxes .box{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .contact .text{
+        width: 100%;
+    }
+    .contact .information .head , .m-no , .gmail{
+        width: 100%;
+        margin: 20px 0;
+    }
+    }
+@media (max-width:500px){
+    .home .text-two{
+        font-size: 55px;
+    }
+    .home .text-three{
+        font-size: 33px;
+    }
+    .about .right .button a{
+        width: 70%;
+        margin:  0 -40px;
+        }        
+    
+    .skills-details .boxes .per{
+        font-size: 50px;
+        color: coral;
+    }
+    .skills-details .image-skill img{
+        width: 250px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
